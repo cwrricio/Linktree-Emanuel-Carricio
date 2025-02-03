@@ -73,7 +73,7 @@ const Card = () => {
                     fontStyle: "italic",  
                     marginBottom: "1.5rem"
                 }}>
-                {"“Computaria e outras coisas”"}
+                {"“Ideias Inventivas”"}
             </Typography>
             {links.map((link) => (
                 <CustomLink linkData={link} key={link.link} />
