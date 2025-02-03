@@ -12,7 +12,10 @@ const CustomLink = ({ linkData }: LinkProps) => {
             className="linkBackground"
             sx={{
                 padding: "0.75rem 5.625rem",
-                width: "14rem",
+                width: {
+                    xs: "9rem", // largura de 11rem em telas pequenas
+                    md: "13rem"  // largura de 14rem em telas médias e maiores
+                },
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
@@ -20,15 +23,13 @@ const CustomLink = ({ linkData }: LinkProps) => {
                 borderRadius: "0.75rem"
             }}>
 
-
             <Link
                 href={linkData.link}
                 target="_blank"
                 className="link">
-
                 {linkData.linkTitle}
-            </Link >
-        </Box >
+            </Link>
+        </Box>
     );
 };
 

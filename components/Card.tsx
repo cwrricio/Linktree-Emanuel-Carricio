@@ -32,19 +32,19 @@ const Card = () => {
         <Box 
             className="cardBackground"
             sx={{
-                padding: { xs: "1.5rem", sm: "2rem" },
+                padding: { xs: "1rem", sm: "2rem" }, // Reduz padding em telas pequenas
                 borderRadius: "0.75rem",
-                maxWidth: { xs: "90vw", sm: "400px" }, 
+                maxWidth: { xs: "85%", sm: "400px" }, // Ocupa 85% da tela pequena, mantém tamanho em telas grandes
                 width: "100%",
-                maxHeight: "90vh",
-                margin: "auto", 
+                maxHeight: { xs: "83vh", sm: "90vh" }, // Reduz altura em telas pequenas
+                margin: { xs: "2rem auto", sm: "auto" }, // Aumenta margens externas em telas pequenas
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
                 justifyContent: "center",
                 textAlign: "center",
                 boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
-                backgroundColor: "#1F1F1F",
+                backgroundColor: "rgba(255, 255, 255, 0.1)",
                 backdropFilter: "blur(10px)"
             }}>
             <Image
