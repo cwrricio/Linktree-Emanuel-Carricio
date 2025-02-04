@@ -13,8 +13,8 @@ const CustomLink = ({ linkData }: LinkProps) => {
             sx={{
                 padding: "0.75rem 5.625rem",
                 width: {
-                    xs: "9rem", // largura de 11rem em telas pequenas
-                    md: "13rem"  // largura de 14rem em telas médias e maiores
+                    xs: "9rem",
+                    md: "13rem"
                 },
                 display: "flex",
                 justifyContent: "center",
@@ -26,7 +26,15 @@ const CustomLink = ({ linkData }: LinkProps) => {
             <Link
                 href={linkData.link}
                 target="_blank"
-                className="link">
+                className="link"
+                style={{
+                    display: "flex",       
+                    justifyContent: "center", 
+                    alignItems: "center",   
+                    width: "100%",         
+                    height: "100%",       
+                    textDecoration: "none"   
+                }}>
                 {linkData.linkTitle}
             </Link>
         </Box>
